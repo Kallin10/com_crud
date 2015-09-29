@@ -1,8 +1,10 @@
 <?php
 
 /*
- * Extensão CRUD para Joomla!
- *
+ * Esta view apresentará a interface inicial do componente
+ */
+
+/*
  * Copyright (C) 2015  Pedro "Ratto" Paixão
  *
  * This program is free software; you can redistribute it and/or
@@ -22,16 +24,3 @@
 
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
-
-// import joomla controller library
-jimport('joomla.application.component.controller');
-
-// Get an instance of the controller prefixed by crud
-$controller = JControllerLegacy::getInstance('crud');
-
-// Perform the Request task
-$input = JFactory::getApplication()->input;
-$controller->execute($input->getCmd('task'));
-
-// Redirect if set by the controller
-$controller->redirect();

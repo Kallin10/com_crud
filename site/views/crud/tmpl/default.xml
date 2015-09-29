@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Este arquivo cria uma entrada de menu para
+	executar o componente -->
+
+<metadata>
+    <layout title="CRUD">
+        <message>CRUD para sites Joomla</message>
+    </layout>
+</metadata>
